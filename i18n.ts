@@ -38,7 +38,7 @@ const importAll = async () => {
 const initializeI18n = async () => {
   const resources = await importAll();
 
-  i18n
+  return i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
@@ -54,9 +54,11 @@ const initializeI18n = async () => {
         escapeValue: false,
       },
     });
-
-  i18n.changeLanguage('en');
 };
+
+initializeI18n().then(() => {
+  i18n.changeLanguage('en');
+});
 
 initializeI18n();
 

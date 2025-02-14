@@ -1,0 +1,30 @@
+{
+  "language": "pt-br",
+  "title": "Portifólio",
+  "home": "Início",
+  "about": "Sobre",
+  "portfolio": "Portfólio",
+  "experience": "Experiência",
+  "contact": "Contatos",
+  "presentation": "Olá, sou Lucas",
+  "role": "Desenvolvedor Fullstack e Designer UI/UX",
+  "guthub": "https://github.com/lucasgola",
+  "linkedin": "https://linkedin.com/in/LucasGola",
+  "email": "lucasgola@outlook.com",
+  "aboutTitle": "Sobre Mim",
+  "aboutText": "Trabalho como desenvolvedor desde 2020 tendo acumulado experiência em diversas áreas na criação de aplicações. Eu amo aprender e trabalhar com diferentes tecnologias e resolver problemas de formas criativas.",
+  "aboutCards": [
+    {
+      "title": "Frontend Development",
+      "text": "Proficiente em React, JavaScript, TypeScript e frameworks de CSS modernos"
+    },
+    {
+      "title": "Frontend Development",
+      "text": "Proficiente em Node.js, Python e gerenciamento de banco de dados"
+    },
+    {
+      "title": "UI/UX Design",
+      "text": "Criando interfaces criativas, intuitivas e com a cara do seu negócio"
+    }
+  ]
+}

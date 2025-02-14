@@ -1,24 +1,39 @@
 import { motion } from 'framer-motion';
 import { Menu, Moon, Sun, X } from 'lucide-react';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
-import { useParams } from 'react-router-dom';
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = React.useState(false);
   const { t, i18n } = useTranslation();
-  const { lang } = useParams<{ lang: string  }>()
+  const { lang } = useParams<{ lang: string }>();
+  const [i18nInitialized, setI18nInitialized] = useState(false);
+
+  useEffect(() => {
+    const initializeI18n = async () => {
+      await i18n.init();
+      setI18nInitialized(true);
+    };
+
+    initializeI18n();
+  }, []);
+
+  const changeLanguage = (lng: string) => {
+    if (i18nInitialized && lng !== i18n.language) {
+      i18n.changeLanguage(lng);
+    }
+  };
 
   const links = [
-    { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
-    { to: '/portfolio', label: 'Portfolio' },
-    { to: '/experience', label: 'Experience' },
-    { to: '/contact', label: 'Contact' },
+    { to: '/', label: t('home') },
+    { to: '/about', label: t('about') },
+    { to: '/portfolio', label: t('portfolio') },
+    { to: '/experience', label: t('experience') },
+    { to: '/contact', label: t('contact') },
   ];
 
   const languages: { code: string; name: string; flag: string }[] = [
@@ -50,12 +65,6 @@ export default function Navbar() {
   const currentLanguage =
     languages.find((lang) => lang.code === i18n.language) || languages[0];
 
-  const changeLanguage = (lng: string) => {
-    if (lng !== i18n.language) {
-      i18n.changeLanguage(lng);
-    }
-  };
-
   return (
     <nav className='fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -65,7 +74,7 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             className='text-2xl font-bold text-gray-900 dark:text-white'
           >
-            Portfólio
+            {t('websiteTitle')}
           </motion.div>
 
           {/* Desktop Navigation */}
