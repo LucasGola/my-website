@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const About = () => {
   const { t } = useTranslation();
+  const items = t('about.hobbies.items', { returnObjects: true });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -97,26 +98,26 @@ const About = () => {
               {[
                 {
                   icon: Gamepad,
-                  title: t('about.hobbies.games.title'),
-                  desc: t('about.hobbies.games.description'),
+                  title: items[1].title,
+                  desc: items[1].description,
                   color: 'blue',
                 },
                 {
                   icon: Music,
-                  title: t('about.hobbies.music.title'),
-                  desc: t('about.hobbies.music.description'),
+                  title: items[0].title,
+                  desc: items[0].description,
                   color: 'purple',
                 },
                 {
                   icon: Monitor,
-                  title: t('about.hobbies.watching.title'),
-                  desc: t('about.hobbies.watching.description'),
+                  title: items[2].title,
+                  desc: items[2].description,
                   color: 'pink',
                 },
                 {
                   icon: Code,
-                  title: t('about.hobbies.programing.title'),
-                  desc: t('about.hobbies.programing.description'),
+                  title: items[3].title,
+                  desc: items[3].description,
                   color: 'amber',
                 },
               ].map((hobby) => (

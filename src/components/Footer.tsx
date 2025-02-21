@@ -66,7 +66,7 @@ const Footer = () => {
                   href='/portfolio'
                   className='hover:text-gray-300 transition-colors'
                 >
-                  {t('footer.link.portfolio')}
+                  {t('footer.links.portfolio')}
                 </a>
               </li>
               <li>
@@ -74,7 +74,7 @@ const Footer = () => {
                   href='/about'
                   className='hover:text-gray-300 transition-colors'
                 >
-                  {t('footer.link.about')}
+                  {t('footer.links.about')}
                 </a>
               </li>
               <li>
@@ -82,7 +82,7 @@ const Footer = () => {
                   href='/contact'
                   className='hover:text-gray-300 transition-colors'
                 >
-                  {t('footer.link.contact')}
+                  {t('footer.links.contact')}
                 </a>
               </li>
             </ul>

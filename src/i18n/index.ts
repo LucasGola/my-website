@@ -16,6 +16,7 @@ const resources = {
         greeting: "Hi, I'm Lucas",
         role: 'Full Stack Developer | UI/UX Designer',
         viewWork: 'View My Work',
+        activities: 'What I Do',
         services: {
           frontend: {
             title: 'Frontend Development',
@@ -37,22 +38,28 @@ const resources = {
           "I'm a passionate Full Stack Developer with a keen eye for design and a love for creating seamless user experiences. With several years of experience in web development, I specialize in building modern, responsive applications using cutting-edge technologies.",
         hobbies: {
           title: 'Hobbies & Interests',
-          music: {
-            title: 'Musica',
-            description: 'Playing guitar and discovering new genres',
-          },
-          games: {
-            title: 'Games',
-            description: 'Playing games',
-          },
-          whatching: {
-            title: 'Whatching',
-            description: 'Watching films',
-          },
-          programing: {
-            title: 'Programing',
-            description: 'Creating projects',
-          },
+          items: [
+            {
+              title: 'Musica',
+              description: 'Playing guitar and discovering new genres',
+              color: 'blue',
+            },
+            {
+              title: 'Games',
+              description: 'Playing games',
+              color: 'purple',
+            },
+            {
+              title: 'Whatching',
+              description: 'Watching films',
+              color: 'pink',
+            },
+            {
+              title: 'Programing',
+              description: 'Creating projects',
+              color: 'amber',
+            },
+          ],
         },
       },
       portfolio: {
@@ -168,9 +175,10 @@ const resources = {
         contact: 'Contato',
       },
       home: {
-        greeting: 'Olá, sou o Lucas',
+        greeting: 'Oi, eu sou o Lucas',
         role: 'Desenvolvedor Full Stack | Designer UI/UX',
         viewWork: 'Veja Meu Trabalho',
+        activities: 'O Que Eu Faço',
         services: {
           frontend: {
             title: 'Desenvolvimento Frontend',
@@ -189,31 +197,37 @@ const resources = {
       about: {
         title: 'Sobre Mim',
         description:
-          'Sou um Desenvolvedor Full Stack apaixonado com um olho atento para design e um amor por criar experiências de usuário perfeitas. Com vários anos de experiência em desenvolvimento web, eu me especializo em construir aplicações modernas e responsivas usando tecnologias de ponta.',
+          'Sou um desenvolvedor Full Stack apaixonado, com um olhar atento para design e um amor por criar experiências de usuário perfeitas. Com vários anos de experiência em desenvolvimento web, eu me especializo em construir aplicações modernas e responsivas usando tecnologias de ponta.',
         hobbies: {
           title: 'Hobbies e Interesses',
-          music: {
-            title: 'Música',
-            description: 'Tocando guitarra e descobrindo novos gêneros',
-          },
-          games: {
-            title: 'Jogos',
-            description: 'Jogando jogos',
-          },
-          watching: {
-            title: 'Assistindo',
-            description: 'Assistindo filmes',
-          },
-          programming: {
-            title: 'Programação',
-            description: 'Criando projetos',
-          },
+          items: [
+            {
+              title: 'Música',
+              description: 'Tocando guitarra e descobrindo novos gêneros',
+              color: 'blue',
+            },
+            {
+              title: 'Jogos',
+              description: 'Jogando videogames',
+              color: 'purple',
+            },
+            {
+              title: 'Assistir',
+              description: 'Assistindo filmes',
+              color: 'pink',
+            },
+            {
+              title: 'Programar',
+              description: 'Criando projetos',
+              color: 'amber',
+            },
+          ],
         },
       },
       portfolio: {
         loading: 'Carregando repositórios...',
         tokenError:
-          'Token do GitHub não encontrado. Por favor, adicione seu token ao arquivo .env.',
+          'Token do GitHub não encontrado. Por favor, adicione seu token no arquivo .env.',
         title: 'Meus Projetos no GitHub',
         description: 'Aqui estão meus repositórios públicos do GitHub',
         filtersTitle: 'Filtrar por Linguagem',
@@ -230,7 +244,7 @@ const resources = {
             description: 'Guima Conseco',
           },
           {
-            title: 'Técnico de Computador',
+            title: 'Técnico de Informática',
             company: 'RMTS Informática',
             period: '2024 - 2024',
             description: 'RMTS Informática',
@@ -285,7 +299,7 @@ const resources = {
       contact: {
         title: 'Entre em Contato',
         description:
-          'Tem uma pergunta ou quer trabalhar junto? Fique à vontade para entrar em contato!',
+          'Tem alguma dúvida ou quer trabalhar junto? Sinta-se à vontade para me contatar!',
         locationTitle: 'Localização',
         location: 'São Paulo - SP',
         phoneTitle: 'Telefone',
@@ -297,7 +311,7 @@ const resources = {
           email: 'Email',
           message: 'Mensagem',
           success: 'Mensagem enviada com sucesso!',
-          failed: 'Falha ao enviar mensagem. Por favor, tente novamente.',
+          failed: 'Falha ao enviar a mensagem. Por favor, tente novamente.',
         },
       },
       footer: {
@@ -327,6 +341,7 @@ const resources = {
         greeting: 'Hola, soy Lucas',
         role: 'Desarrollador Full Stack | Diseñador UI/UX',
         viewWork: 'Ver Mi Trabajo',
+        activities: 'Lo Que Hago',
         services: {
           frontend: {
             title: 'Desarrollo Frontend',
@@ -346,37 +361,43 @@ const resources = {
       about: {
         title: 'Acerca de Mí',
         description:
-          'Soy un Desarrollador Full Stack apasionado con un ojo atento para el diseño y un amor por crear experiencias de usuario perfectas. Con varios años de experiencia en desarrollo web, me especializo en construir aplicaciones modernas y responsivas usando tecnologías de vanguardia.',
+          'Soy un Desarrollador Full Stack apasionado, con un ojo atento para el diseño y un amor por crear experiencias de usuario perfectas. Con varios años de experiencia en desarrollo web, me especializo en construir aplicaciones modernas y responsivas utilizando tecnologías de punta.',
         hobbies: {
-          title: 'Hobbies e Intereses',
-          music: {
-            title: 'Música',
-            description: 'Tocar guitarra y descubrir nuevos géneros',
-          },
-          games: {
-            title: 'Juegos',
-            description: 'Jugar juegos',
-          },
-          watching: {
-            title: 'Mirar',
-            description: 'Mirar películas',
-          },
-          programming: {
-            title: 'Programación',
-            description: 'Crear proyectos',
-          },
+          title: 'Aficiones e Intereses',
+          items: [
+            {
+              title: 'Música',
+              description: 'Tocando guitarra y descubriendo nuevos géneros',
+              color: 'blue',
+            },
+            {
+              title: 'Juegos',
+              description: 'Jugando videojuegos',
+              color: 'purple',
+            },
+            {
+              title: 'Ver',
+              description: 'Viendo películas',
+              color: 'pink',
+            },
+            {
+              title: 'Programar',
+              description: 'Creando proyectos',
+              color: 'amber',
+            },
+          ],
         },
       },
       portfolio: {
         loading: 'Cargando repositorios...',
         tokenError:
-          'Token de GitHub no encontrado. Por favor, añade tu token al archivo .env.',
+          'Token de GitHub no encontrado. Por favor, agregue su token en el archivo .env.',
         title: 'Mis Proyectos en GitHub',
         description: 'Aquí están mis repositorios públicos de GitHub',
-        filtersTitle: 'Filtrar por Lenguaje',
+        filtersTitle: 'Filtrar por Idioma',
         clearFilters: 'Limpiar Filtros',
         noResults:
-          'No se encontraron repositorios con los lenguajes seleccionados.',
+          'No se encontraron repositorios con los idiomas seleccionados.',
       },
       career: {
         profissional: [
@@ -387,13 +408,13 @@ const resources = {
             description: 'Guima Conseco',
           },
           {
-            title: 'Técnico de Computadora',
+            title: 'Técnico de Informática',
             company: 'RMTS Informática',
             period: '2024 - 2024',
             description: 'RMTS Informática',
           },
           {
-            title: 'Pasante',
+            title: 'Becario',
             company: 'VIVO',
             period: '2022 - 2023',
             description: 'VIVO',
@@ -409,21 +430,21 @@ const resources = {
           {
             degree: 'Ingeniería Informática',
             school: 'Faculdade Impacta de Tecnologia',
-            type: 'Licenciatura',
+            type: 'Grado en Ingeniería',
             period: '2021 - 2024',
             description: 'Ingeniería Informática',
           },
           {
             degree: 'Técnico en Administración',
             school: 'ETEC Parque da Juventude',
-            type: 'Curso Técnico',
+            type: 'Grado Técnico',
             period: '2017 - 2019',
             description: 'Técnico en Administración',
           },
         ],
         certifications: [
           {
-            name: 'Desarrollador Certificado AWS',
+            name: 'Desarrollador Certificado de AWS',
             issuer: 'Amazon Web Services',
             year: '2022',
           },
@@ -447,14 +468,15 @@ const resources = {
         location: 'São Paulo - SP',
         phoneTitle: 'Teléfono',
         phone: '+55 (11) 99448-5761',
-        emailTitle: 'Email',
+        emailTitle: 'Correo Electrónico',
         email: 'lucasgola@outlook.com',
         forms: {
           name: 'Nombre',
-          email: 'Email',
+          email: 'Correo Electrónico',
           message: 'Mensaje',
           success: '¡Mensaje enviado con éxito!',
-          failed: 'Error al enviar el mensaje. Por favor, inténtalo de nuevo.',
+          failed:
+            'No se pudo enviar el mensaje. Por favor, inténtalo de nuevo.',
         },
       },
       footer: {
@@ -481,56 +503,63 @@ const resources = {
         contact: '联系',
       },
       home: {
-        greeting: '你好，我是 Lucas',
-        role: '全栈开发者 | UI/UX 设计师',
-        viewWork: '查看我的作品',
+        greeting: '你好，我是Lucas',
+        role: '全栈开发者 | UI/UX设计师',
+        viewWork: '查看我的工作',
+        activities: '我做什么',
         services: {
           frontend: {
             title: '前端开发',
-            description: '创建美观、响应迅速的用户界面',
+            description: '创建美丽、响应迅速的用户界面',
           },
           backend: {
             title: '后端开发',
-            description: '构建可靠的服务器端应用',
+            description: '构建强大的服务器端应用程序',
           },
           design: {
-            title: 'UI/UX 设计',
-            description: '打造直观的用户体验',
+            title: 'UI/UX设计',
+            description: '设计直观的用户体验',
           },
         },
       },
       about: {
         title: '关于我',
         description:
-          '我是一名热情的全栈开发者，对设计充满敏锐的洞察力，热爱创造无缝的用户体验。拥有多年的网页开发经验，我专注于使用尖端技术构建现代、响应式应用程序。',
+          '我是一名充满激情的全栈开发者，对设计有敏锐的洞察力，热爱创造无缝的用户体验。拥有多年的Web开发经验，擅长使用尖端技术构建现代、响应迅速的应用程序。',
         hobbies: {
-          title: '爱好与兴趣',
-          music: {
-            title: '音乐',
-            description: '弹吉他和发现新音乐类型',
-          },
-          games: {
-            title: '游戏',
-            description: '玩游戏',
-          },
-          watching: {
-            title: '观看',
-            description: '看电影',
-          },
-          programming: {
-            title: '编程',
-            description: '创建项目',
-          },
+          title: '爱好和兴趣',
+          items: [
+            {
+              title: '音乐',
+              description: '弹吉他和发现新的音乐流派',
+              color: 'blue',
+            },
+            {
+              title: '游戏',
+              description: '玩电子游戏',
+              color: 'purple',
+            },
+            {
+              title: '观看',
+              description: '看电影',
+              color: 'pink',
+            },
+            {
+              title: '编程',
+              description: '创建项目',
+              color: 'amber',
+            },
+          ],
         },
       },
       portfolio: {
-        loading: '正在加载库...',
-        tokenError: '未找到 GitHub 令牌。请将您的令牌添加到 .env 文件中。',
-        title: '我的 GitHub 项目',
-        description: '以下是我在 GitHub 上的公共库',
-        filtersTitle: '按语言筛选',
-        clearFilters: '清除筛选器',
-        noResults: '未找到使用所选语言的库。',
+        loading: '加载存储库...',
+        tokenError: '找不到GitHub令牌。请将您的令牌添加到.env文件中。',
+        title: '我的GitHub项目',
+        description: '这是我的GitHub公共存储库',
+        filtersTitle: '按语言过滤',
+        clearFilters: '清除过滤器',
+        noResults: '未找到具有选定语言的存储库。',
       },
       career: {
         profissional: [
@@ -568,26 +597,26 @@ const resources = {
             description: '计算机工程',
           },
           {
-            degree: '行政管理技术员',
+            degree: '管理技术员',
             school: 'ETEC Parque da Juventude',
             type: '技术学位',
             period: '2017 - 2019',
-            description: '行政管理技术员',
+            description: '管理技术员',
           },
         ],
         certifications: [
           {
-            name: 'AWS 认证开发者',
+            name: 'AWS认证开发者',
             issuer: 'Amazon Web Services',
             year: '2022',
           },
           {
-            name: '专业 Scrum Master I',
+            name: '专业Scrum Master I',
             issuer: 'Scrum.org',
             year: '2021',
           },
           {
-            name: '高级 React 认证',
+            name: 'React高级认证',
             issuer: 'Meta',
             year: '2020',
           },
@@ -595,8 +624,8 @@ const resources = {
       },
       contact: {
         title: '取得联系',
-        description: '有问题或想一起合作？欢迎随时联系我！',
-        locationTitle: '位置',
+        description: '有问题或想合作吗？随时与我联系！',
+        locationTitle: '地点',
         location: '圣保罗 - SP',
         phoneTitle: '电话',
         phone: '+55 (11) 99448-5761',
@@ -607,7 +636,7 @@ const resources = {
           email: '电子邮件',
           message: '消息',
           success: '消息发送成功！',
-          failed: '消息发送失败。请重试。',
+          failed: '消息发送失败。请再试一次。',
         },
       },
       footer: {
@@ -628,63 +657,70 @@ const resources = {
     translation: {
       nav: {
         portfolio: 'पोर्टफोलियो',
-        home: 'होम',
-        about: 'के बारे में',
+        home: 'मुख्य पृष्ठ',
+        about: 'मेरे बारे में',
         career: 'करियर',
-        contact: 'संपर्क',
+        contact: 'संपर्क करें',
       },
       home: {
-        greeting: 'नमस्ते, मैं लुकास हूं',
-        role: 'फुल स्टैक डेवलपर | UI/UX डिज़ाइनर',
-        viewWork: 'मेरा काम देखें',
+        greeting: 'नमस्ते, मैं लुकास हूँ',
+        role: 'पूर्ण स्टैक डेवलपर | यूआई/यूएक्स डिज़ाइनर',
+        viewWork: 'मेरा कार्य देखें',
+        activities: 'मैं क्या करता हूं',
         services: {
           frontend: {
             title: 'फ्रंटेंड डेवलपमेंट',
-            description: 'सुरुचिपूर्ण, उत्तरदायी उपयोगकर्ता इंटरफेस बनाना',
+            description: 'सुंदर, उत्तरदायी यूजर इंटरफेस बनाना',
           },
           backend: {
-            title: 'बैकेंड डेवलपमेंट',
-            description: 'मजबूत सर्वर-साइड एप्लिकेशन बनाना',
+            title: 'बैकएंड डेवलपमेंट',
+            description: 'मजबूत सर्वर-साइड अनुप्रयोग बनाना',
           },
           design: {
-            title: 'UI/UX डिज़ाइन',
-            description: 'अनुभवपूर्ण उपयोगकर्ता अनुभव बनाना',
+            title: 'यूआई/यूएक्स डिज़ाइन',
+            description: 'सीमलेस यूजर अनुभव तैयार करना',
           },
         },
       },
       about: {
         title: 'मेरे बारे में',
         description:
-          'मैं एक उत्साही फुल स्टैक डेवलपर हूं जो डिजाइन के लिए तीखी नजर और बिना किसी कठिनाई के उपयोगकर्ता अनुभव बनाने के प्रेम के साथ हूं। कई वर्षों के वेब डेवलपमेंट के अनुभव के साथ, मैं आधुनिक, उत्तरदायी एप्लिकेशन बनाने में विशेषज्ञ हूं जो अत्याधुनिक तकनीकों का उपयोग करते हैं।',
+          'मैं एक जुनूनी पूर्ण स्टैक डेवलपर हूं, जो डिज़ाइन के लिए एक गहरी नजर रखता है और निर्बाध उपयोगकर्ता अनुभव बनाने के लिए प्यार करता है। कई वर्षों के वेब विकास के अनुभव के साथ, मैं आधुनिक, उत्तरदायी अनुप्रयोग बनाने में माहिर हूं जो नवीनतम तकनीकों का उपयोग करते हैं।',
         hobbies: {
-          title: 'शौक और रुचियाँ',
-          music: {
-            title: 'संगीत',
-            description: 'गिटार बजाना और नए शैलियों को खोजना',
-          },
-          games: {
-            title: 'गेम्स',
-            description: 'गेम्स खेलना',
-          },
-          watching: {
-            title: 'देखना',
-            description: 'फिल्में देखना',
-          },
-          programming: {
-            title: 'प्रोग्रामिंग',
-            description: 'प्रोजेक्ट बनाना',
-          },
+          title: 'शौक और रुचियां',
+          items: [
+            {
+              title: 'संगीत',
+              description: 'गिटार बजाना और नए शैलियों की खोज करना',
+              color: 'blue',
+            },
+            {
+              title: 'खेल',
+              description: 'वीडियो गेम खेलना',
+              color: 'purple',
+            },
+            {
+              title: 'देखना',
+              description: 'फिल्में देखना',
+              color: 'pink',
+            },
+            {
+              title: 'प्रोग्रामिंग',
+              description: 'प्रोजेक्ट बनाना',
+              color: 'amber',
+            },
+          ],
         },
       },
       portfolio: {
-        loading: 'रिपॉजिटरी लोड हो रहे हैं...',
+        loading: 'भंडार लोड हो रहे हैं...',
         tokenError:
-          'GitHub टोकन नहीं मिला। कृपया अपना टोकन .env फाइल में जोड़ें।',
+          'GitHub टोकन नहीं मिला। कृपया अपना टोकन .env फ़ाइल में जोड़ें।',
         title: 'मेरे GitHub प्रोजेक्ट्स',
-        description: 'यहाँ मेरे सार्वजनिक GitHub रिपॉजिटरी हैं',
-        filtersTitle: 'भाषा के द्वारा फ़िल्टर करें',
+        description: 'यहाँ मेरे सार्वजनिक GitHub भंडार हैं',
+        filtersTitle: 'भाषा के अनुसार फ़िल्टर करें',
         clearFilters: 'फ़िल्टर साफ़ करें',
-        noResults: 'चयनित भाषाओं के साथ कोई रिपॉजिटरी नहीं मिली।',
+        noResults: 'चयनित भाषाओं के साथ कोई भंडार नहीं मिला।',
       },
       career: {
         profissional: [
@@ -707,24 +743,24 @@ const resources = {
             description: 'VIVO',
           },
           {
-            title: 'जूनियर फुल स्टैक डेवलपर',
+            title: 'जूनियर पूर्ण स्टैक डेवलपर',
             company: 'Go Ahead',
             period: '2021 - 2022',
-            description: 'जूनियर फुल स्टैक डेवलपर',
+            description: 'जूनियर पूर्ण स्टैक डेवलपर',
           },
         ],
         studies: [
           {
             degree: 'कंप्यूटर इंजीनियरिंग',
             school: 'Faculdade Impacta de Tecnologia',
-            type: 'बैचलर डिग्री',
+            type: 'स्नातक की डिग्री',
             period: '2021 - 2024',
             description: 'कंप्यूटर इंजीनियरिंग',
           },
           {
             degree: 'प्रशासन तकनीशियन',
             school: 'ETEC Parque da Juventude',
-            type: 'टेक्निकल डिग्री',
+            type: 'तकनीकी डिग्री',
             period: '2017 - 2019',
             description: 'प्रशासन तकनीशियन',
           },
@@ -736,12 +772,12 @@ const resources = {
             year: '2022',
           },
           {
-            name: 'प्रोफेशनल स्क्रम मास्टर I',
+            name: 'पेशेवर स्क्रम मास्टर I',
             issuer: 'Scrum.org',
             year: '2021',
           },
           {
-            name: 'रीएक्ट एडवांस्ड प्रमाणपत्र',
+            name: 'React एडवांस्ड प्रमाणपत्र',
             issuer: 'Meta',
             year: '2020',
           },
@@ -750,7 +786,7 @@ const resources = {
       contact: {
         title: 'संपर्क करें',
         description:
-          'कोई प्रश्न है या साथ काम करना चाहते हैं? कृपया मुझसे संपर्क करें!',
+          'कोई प्रश्न है या साथ काम करना चाहते हैं? मुझसे संपर्क करने में संकोच न करें!',
         locationTitle: 'स्थान',
         location: 'साओ पाउलो - एसपी',
         phoneTitle: 'फ़ोन',
@@ -766,91 +802,97 @@ const resources = {
         },
       },
       footer: {
-        contact: 'संपर्क',
+        contact: 'संपर्क करें',
         email: 'lucasgola@outlook.com',
         media: 'सोशल मीडिया',
         links: {
           title: 'त्वरित लिंक',
           portfolio: 'पोर्टफोलियो',
-          about: 'के बारे में',
-          contact: 'संपर्क',
+          about: 'मेरे बारे में',
+          contact: 'संपर्क करें',
         },
-        rights: '2025 Lucas Gola da Silva। सभी अधिकार सुरक्षित।',
+        rights: '2025 लुकास गोला दा सिल्वा। सर्वाधिकार सुरक्षित।',
       },
     },
   },
   ar: {
     translation: {
       nav: {
-        portfolio: 'المحفظة',
-        home: 'الرئيسية',
-        about: 'حول',
-        career: 'المسار المهني',
-        contact: 'اتصل',
+        portfolio: 'ملف الأعمال',
+        home: 'الصفحة الرئيسية',
+        about: 'معلومات عني',
+        career: 'المسيرة المهنية',
+        contact: 'التواصل',
       },
       home: {
-        greeting: 'مرحبًا، أنا لوكاس',
-        role: 'مطور متكامل | مصمم UI/UX',
+        greeting: 'مرحباً، أنا لوكاس',
+        role: 'مطور متكامل | مصمم واجهة المستخدم وتجربة المستخدم',
         viewWork: 'عرض أعمالي',
+        activities: 'ما أقوم به',
         services: {
           frontend: {
             title: 'تطوير الواجهة الأمامية',
-            description: 'إنشاء واجهات مستخدم جميلة وسريعة الاستجابة',
+            description: 'إنشاء واجهات مستخدم جميلة ومتجاوبة',
           },
           backend: {
-            title: 'تطوير الخلفية',
-            description: 'بناء تطبيقات قوية على الجانب الخادم',
+            title: 'تطوير الواجهة الخلفية',
+            description: 'بناء تطبيقات قوية من جانب الخادم',
           },
           design: {
-            title: 'تصميم UI/UX',
+            title: 'تصميم واجهة المستخدم وتجربة المستخدم',
             description: 'تصميم تجارب مستخدم بديهية',
           },
         },
       },
       about: {
-        title: 'نبذة عني',
+        title: 'معلومات عني',
         description:
-          'أنا مطور متكامل مفعم بالشغف ولدي عين ثاقبة للتصميم وحب لإنشاء تجارب مستخدم سلسة. مع سنوات عديدة من الخبرة في تطوير الويب، أختص في بناء تطبيقات حديثة وسريعة الاستجابة باستخدام تقنيات متطورة.',
+          'أنا مطور متكامل شغوف ذو عين ثاقبة للتصميم وحب لخلق تجارب مستخدم سلسة. مع عدة سنوات من الخبرة في تطوير الويب، أتخصص في بناء تطبيقات حديثة ومتجاوبة باستخدام تقنيات متطورة.',
         hobbies: {
           title: 'الهوايات والاهتمامات',
-          music: {
-            title: 'الموسيقى',
-            description: 'عزف الجيتار واكتشاف أنواع جديدة',
-          },
-          games: {
-            title: 'الألعاب',
-            description: 'لعب الألعاب',
-          },
-          watching: {
-            title: 'مشاهدة',
-            description: 'مشاهدة الأفلام',
-          },
-          programming: {
-            title: 'البرمجة',
-            description: 'إنشاء المشاريع',
-          },
+          items: [
+            {
+              title: 'الموسيقى',
+              description: 'عزف الغيتار واكتشاف أنواع جديدة',
+              color: 'أزرق',
+            },
+            {
+              title: 'الألعاب',
+              description: 'لعب الألعاب',
+              color: 'أرجواني',
+            },
+            {
+              title: 'المشاهدة',
+              description: 'مشاهدة الأفلام',
+              color: 'وردي',
+            },
+            {
+              title: 'البرمجة',
+              description: 'إنشاء المشاريع',
+              color: 'كهرماني',
+            },
+          ],
         },
       },
       portfolio: {
-        loading: 'جارٍ تحميل المستودعات...',
-        tokenError:
-          'لم يتم العثور على رمز GitHub. يرجى إضافة الرمز الخاص بك إلى ملف .env.',
+        loading: 'جاري تحميل المستودعات...',
+        tokenError: 'رمز GitHub غير موجود. يرجى إضافة الرمز إلى ملف .env.',
         title: 'مشاريعي على GitHub',
-        description: 'ها هي مستودعاتي العامة على GitHub',
+        description: 'إليك مستودعاتي العامة من GitHub',
         filtersTitle: 'تصفية حسب اللغة',
-        clearFilters: 'مسح الفلاتر',
-        noResults: 'لم يتم العثور على مستودعات باستخدام اللغات المحددة.',
+        clearFilters: 'مسح التصفية',
+        noResults: 'لم يتم العثور على مستودعات باللغات المحددة.',
       },
       career: {
         profissional: [
           {
             title: 'محلل عمليات مبتدئ',
             company: 'Guima Conseco',
-            period: '2024 - الوقت الحالي',
+            period: '2024 - إلى الآن',
             description: 'Guima Conseco',
           },
           {
-            title: 'فني كمبيوتر',
+            title: 'فني حاسوب',
             company: 'RMTS Informática',
             period: '2024 - 2024',
             description: 'RMTS Informática',
@@ -877,11 +919,11 @@ const resources = {
             description: 'هندسة الحاسوب',
           },
           {
-            degree: 'فني إدارة',
+            degree: 'فني الإدارة',
             school: 'ETEC Parque da Juventude',
             type: 'درجة فنية',
             period: '2017 - 2019',
-            description: 'فني إدارة',
+            description: 'فني الإدارة',
           },
         ],
         certifications: [
@@ -891,23 +933,23 @@ const resources = {
             year: '2022',
           },
           {
-            name: 'محترف Scrum Master I',
+            name: 'مدير سكروم محترف I',
             issuer: 'Scrum.org',
             year: '2021',
           },
           {
-            name: 'شهادة متقدمة في React',
+            name: 'شهادة React المتقدمة',
             issuer: 'Meta',
             year: '2020',
           },
         ],
       },
       contact: {
-        title: 'ابقى على تواصل',
+        title: 'تواصل معي',
         description:
-          'هل لديك سؤال أو تريد العمل معًا؟ لا تتردد في التواصل معي!',
+          'هل لديك سؤال أو ترغب في العمل معاً؟ لا تتردد في التواصل معي!',
         locationTitle: 'الموقع',
-        location: 'ساو باولو - إس بي',
+        location: 'ساو باولو - SP',
         phoneTitle: 'الهاتف',
         phone: '+55 (11) 99448-5761',
         emailTitle: 'البريد الإلكتروني',
@@ -921,16 +963,16 @@ const resources = {
         },
       },
       footer: {
-        contact: 'اتصل',
+        contact: 'التواصل',
         email: 'lucasgola@outlook.com',
         media: 'وسائل التواصل الاجتماعي',
         links: {
           title: 'روابط سريعة',
-          portfolio: 'المحفظة',
-          about: 'حول',
-          contact: 'اتصل',
+          portfolio: 'ملف الأعمال',
+          about: 'معلومات عني',
+          contact: 'التواصل',
         },
-        rights: '2025 Lucas Gola da Silva. جميع الحقوق محفوظة.',
+        rights: '2025 لوكاس غولا دا سيلفا. جميع الحقوق محفوظة.',
       },
     },
   },
@@ -938,64 +980,70 @@ const resources = {
     translation: {
       nav: {
         portfolio: 'পোর্টফোলিও',
-        home: 'হোম',
-        about: 'সম্পর্কে',
-        career: 'ক্যারিয়ার',
+        home: 'প্রধান পাতা',
+        about: 'আমাদের সম্পর্কে',
+        career: 'পেশা',
         contact: 'যোগাযোগ',
       },
       home: {
-        greeting: 'হ্যালো, আমি লুকাস',
+        greeting: 'হাই, আমি লুকাস',
         role: 'ফুল স্ট্যাক ডেভেলপার | ইউআই/ইউএক্স ডিজাইনার',
         viewWork: 'আমার কাজ দেখুন',
+        activities: 'আমি কি করি',
         services: {
           frontend: {
-            title: 'ফ্রন্টেন্ড ডেভেলপমেন্ট',
-            description:
-              'সুন্দর, প্রতিক্রিয়াশীল ব্যবহারকারীর ইন্টারফেস তৈরি করা',
+            title: 'ফ্রন্টএন্ড ডেভেলপমেন্ট',
+            description: 'সুন্দর, প্রতিক্রিয়াশীল ইউজার ইন্টারফেস তৈরি করা',
           },
           backend: {
-            title: 'ব্যাকেন্ড ডেভেলপমেন্ট',
-            description: 'দৃঢ় সার্ভার-সাইড অ্যাপ্লিকেশন তৈরি করা',
+            title: 'ব্যাকএন্ড ডেভেলপমেন্ট',
+            description: 'শক্তিশালী সার্ভার-সাইড অ্যাপ্লিকেশন নির্মাণ',
           },
           design: {
             title: 'ইউআই/ইউএক্স ডিজাইন',
-            description: 'স্বজ্ঞাত ব্যবহারকারীর অভিজ্ঞতা তৈরি করা',
+            description: 'ইউজার ইন্টারফেস ও এক্সপিরিয়েন্স ডিজাইন করা',
           },
         },
       },
       about: {
-        title: 'আমার সম্পর্কে',
+        title: 'আমাদের সম্পর্কে',
         description:
-          'আমি একটি অনুরাগী ফুল স্ট্যাক ডেভেলপার যা ডিজাইনের জন্য তীক্ষ্ণ নজর এবং স্বতন্ত্র ব্যবহারকারীর অভিজ্ঞতা তৈরির প্রতি ভালোবাসা সহ। ওয়েব ডেভেলপমেন্টে কয়েক বছরের অভিজ্ঞতা সহ, আমি আধুনিক, প্রতিক্রিয়াশীল অ্যাপ্লিকেশন তৈরি করতে পারদর্শী যা সর্বাধুনিক প্রযুক্তি ব্যবহার করে।',
+          'আমি একজন উৎসাহী ফুল স্ট্যাক ডেভেলপার, যিনি ডিজাইনের জন্য একটি তীক্ষ্ণ দৃষ্টি এবং সুস্বাদু ইউজার এক্সপিরিয়েন্স তৈরির ভালোবাসা রয়েছে। ওয়েব ডেভেলপমেন্টে কয়েক বছরের অভিজ্ঞতা নিয়ে, আমি আধুনিক, প্রতিক্রিয়াশীল অ্যাপ্লিকেশন তৈরি করতে বিশেষজ্ঞ, যা কাটিং-এজ প্রযুক্তি ব্যবহার করে।',
         hobbies: {
-          title: 'শখ এবং আগ্রহ',
-          music: {
-            title: 'সঙ্গীত',
-            description: 'গিটার বাজানো এবং নতুন শৈলীর আবিষ্কার করা',
-          },
-          games: {
-            title: 'গেমস',
-            description: 'গেমস খেলা',
-          },
-          watching: {
-            title: 'দেখা',
-            description: 'ফিল্ম দেখা',
-          },
-          programming: {
-            title: 'প্রোগ্রামিং',
-            description: 'প্রকল্প তৈরি করা',
-          },
+          title: 'শখ ও আগ্রহ',
+          items: [
+            {
+              title: 'সঙ্গীত',
+              description: 'গিটার বাজানো এবং নতুন প্রকার আবিষ্কার করা',
+              color: 'নীল',
+            },
+            {
+              title: 'গেমস',
+              description: 'গেম খেলা',
+              color: 'বেগুনি',
+            },
+            {
+              title: 'দেখা',
+              description: 'ফিল্ম দেখা',
+              color: 'গোলাপি',
+            },
+            {
+              title: 'প্রোগ্রামিং',
+              description: 'প্রকল্প তৈরি করা',
+              color: 'ক্যাম্বার',
+            },
+          ],
         },
       },
       portfolio: {
-        loading: 'রিপোজিটরি লোড হচ্ছে...',
+        loading: 'রিপোজিটরিজ লোড হচ্ছে...',
         tokenError:
-          'GitHub টোকেন পাওয়া যায়নি। অনুগ্রহ করে আপনার টোকেন .env ফাইলে যোগ করুন।',
-        title: 'আমার GitHub প্রকল্পগুলি',
-        description: 'এখানে আমার পাবলিক GitHub রিপোজিটরিগুলি রয়েছে',
-        filtersTitle: 'ভাষা দ্বারা ফিল্টার করুন',
-        clearFilters: 'ফিল্টার মুছুন',
-        noResults: 'নির্বাচিত ভাষা সহ কোনও রিপোজিটরি পাওয়া যায়নি।',
+          'GitHub টোকেন পাওয়া যায়নি। দয়া করে আপনার টোকেন .env ফাইলে যোগ করুন।',
+        title: 'আমার GitHub প্রকল্প',
+        description: 'এখানে আমার পাবলিক রিপোজিটরিজ রয়েছে',
+        filtersTitle: 'ভাষা অনুসারে ফিল্টার করুন',
+        clearFilters: 'ফিল্টার মুছে ফেলুন',
+        noResults: 'নির্বাচিত ভাষায় কোনো রিপোজিটরি পাওয়া যায়নি।',
       },
       career: {
         profissional: [
@@ -1012,7 +1060,7 @@ const resources = {
             description: 'RMTS Informática',
           },
           {
-            title: 'শিক্ষানবিস',
+            title: 'প্রশিক্ষণার্থী',
             company: 'VIVO',
             period: '2022 - 2023',
             description: 'VIVO',
@@ -1033,11 +1081,11 @@ const resources = {
             description: 'কম্পিউটার ইঞ্জিনিয়ারিং',
           },
           {
-            degree: 'প্রশাসন টেকনিশিয়ান',
+            degree: 'প্রশাসনিক টেকনিশিয়ান',
             school: 'ETEC Parque da Juventude',
             type: 'টেকনিক্যাল ডিগ্রি',
             period: '2017 - 2019',
-            description: 'প্রশাসন টেকনিশিয়ান',
+            description: 'প্রশাসনিক টেকনিশিয়ান',
           },
         ],
         certifications: [
@@ -1052,7 +1100,7 @@ const resources = {
             year: '2021',
           },
           {
-            name: 'React অগ্রিম সার্টিফিকেশন',
+            name: 'React অ্যাডভান্সড সার্টিফিকেশন',
             issuer: 'Meta',
             year: '2020',
           },
@@ -1061,9 +1109,9 @@ const resources = {
       contact: {
         title: 'যোগাযোগ করুন',
         description:
-          'কোন প্রশ্ন আছে অথবা একসাথে কাজ করতে চান? অনুগ্রহ করে আমার সাথে যোগাযোগ করুন!',
+          'আপনার যদি কোনো প্রশ্ন থাকে বা একসাথে কাজ করতে চান? বিনা দ্বিধায় আমার সাথে যোগাযোগ করুন!',
         locationTitle: 'অবস্থান',
-        location: 'সাও পাওলো - এসপি',
+        location: 'সাও পাওলো - SP',
         phoneTitle: 'ফোন',
         phone: '+55 (11) 99448-5761',
         emailTitle: 'ইমেইল',
@@ -1073,7 +1121,7 @@ const resources = {
           email: 'ইমেইল',
           message: 'বার্তা',
           success: 'বার্তা সফলভাবে পাঠানো হয়েছে!',
-          failed: 'বার্তা পাঠাতে ব্যর্থ। অনুগ্রহ করে পুনরায় চেষ্টা করুন।',
+          failed: 'বার্তা পাঠাতে ব্যর্থ হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।',
         },
       },
       footer: {
@@ -1083,10 +1131,10 @@ const resources = {
         links: {
           title: 'দ্রুত লিঙ্ক',
           portfolio: 'পোর্টফোলিও',
-          about: 'সম্পর্কে',
+          about: 'আমাদের সম্পর্কে',
           contact: 'যোগাযোগ',
         },
-        rights: '2025 Lucas Gola da Silva. সর্বস্বত্ব সংরক্ষিত।',
+        rights: '2025 লুকাস গোলা দা সিলভা. সর্বস্বত্ব সংরক্ষিত।',
       },
     },
   },
@@ -1095,62 +1143,70 @@ const resources = {
       nav: {
         portfolio: 'ポートフォリオ',
         home: 'ホーム',
-        about: '私について',
+        about: '自己紹介',
         career: 'キャリア',
-        contact: '連絡先',
+        contact: 'コンタクト',
       },
       home: {
-        greeting: 'こんにちは、私はルーカスです',
+        greeting: 'こんにちは、ルーカスです',
         role: 'フルスタック開発者 | UI/UXデザイナー',
-        viewWork: '私の仕事を見る',
+        viewWork: '私の作品を見る',
+        activities: '私がやること',
         services: {
           frontend: {
             title: 'フロントエンド開発',
-            description: '美しく、レスポンシブなユーザーインターフェースを作成',
+            description:
+              '美しく、レスポンシブなユーザーインターフェースを作成する',
           },
           backend: {
             title: 'バックエンド開発',
-            description: '堅牢なサーバーサイドアプリケーションの構築',
+            description: '堅牢なサーバーサイドアプリケーションを構築する',
           },
           design: {
             title: 'UI/UXデザイン',
-            description: '直感的なユーザー体験の作成',
+            description: '直感的なユーザー体験を設計する',
           },
         },
       },
       about: {
-        title: '私について',
+        title: '自己紹介',
         description:
-          '私はデザインに敏感な目を持ち、シームレスなユーザー体験を作り出すことを愛する情熱的なフルスタック開発者です。ウェブ開発の豊富な経験を持ち、最新技術を駆使してモダンでレスポンシブなアプリケーションを構築することを専門としています。',
+          '私はデザインに鋭い目を持ち、シームレスなユーザー体験を作成することが大好きな熱心なフルスタック開発者です。ウェブ開発の数年間の経験を持ち、最先端の技術を使用してモダンでレスポンシブなアプリケーションを構築することを専門としています。',
         hobbies: {
           title: '趣味と興味',
-          music: {
-            title: '音楽',
-            description: 'ギターを弾いたり、新しいジャンルを発見したり',
-          },
-          games: {
-            title: 'ゲーム',
-            description: 'ゲームをプレイ',
-          },
-          watching: {
-            title: '鑑賞',
-            description: '映画を鑑賞',
-          },
-          programming: {
-            title: 'プログラミング',
-            description: 'プロジェクトを作成',
-          },
+          items: [
+            {
+              title: '音楽',
+              description: 'ギターを弾いたり、新しいジャンルを発見すること',
+              color: '青',
+            },
+            {
+              title: 'ゲーム',
+              description: 'ゲームをすること',
+              color: '紫',
+            },
+            {
+              title: '見ること',
+              description: '映画を見ること',
+              color: 'ピンク',
+            },
+            {
+              title: 'プログラミング',
+              description: 'プロジェクトを作成すること',
+              color: 'アンバー',
+            },
+          ],
         },
       },
       portfolio: {
-        loading: 'リポジトリを読み込み中...',
+        loading: 'リポジトリを読み込んでいます...',
         tokenError:
           'GitHubトークンが見つかりません。トークンを.envファイルに追加してください。',
         title: '私のGitHubプロジェクト',
-        description: 'こちらは私の公開GitHubリポジトリです',
+        description: 'こちらが私の公開リポジトリです',
         filtersTitle: '言語でフィルター',
         clearFilters: 'フィルターをクリア',
-        noResults: '選択された言語のリポジトリは見つかりませんでした。',
+        noResults: '選択された言語のリポジトリが見つかりませんでした。',
       },
       career: {
         profissional: [
@@ -1161,13 +1217,13 @@ const resources = {
             description: 'Guima Conseco',
           },
           {
-            title: 'コンピュータ技術者',
+            title: 'コンピュータテクニシャン',
             company: 'RMTS Informática',
             period: '2024 - 2024',
             description: 'RMTS Informática',
           },
           {
-            title: 'トレイニー',
+            title: 'インターン',
             company: 'VIVO',
             period: '2022 - 2023',
             description: 'VIVO',
@@ -1190,7 +1246,7 @@ const resources = {
           {
             degree: '管理技術者',
             school: 'ETEC Parque da Juventude',
-            type: '技術学位',
+            type: '技術者',
             period: '2017 - 2019',
             description: '管理技術者',
           },
@@ -1216,10 +1272,10 @@ const resources = {
       contact: {
         title: 'お問い合わせ',
         description:
-          'ご質問や一緒に仕事をしたい場合は、どうぞお気軽にお問い合わせください！',
-        locationTitle: '所在地',
+          '質問がある場合や一緒に仕事をしたい場合は、気軽に連絡してください!',
+        locationTitle: '場所',
         location: 'サンパウロ - SP',
-        phoneTitle: '電話番号',
+        phoneTitle: '電話',
         phone: '+55 (11) 99448-5761',
         emailTitle: 'メール',
         email: 'lucasgola@outlook.com',
@@ -1228,11 +1284,11 @@ const resources = {
           email: 'メール',
           message: 'メッセージ',
           success: 'メッセージが正常に送信されました！',
-          failed: 'メッセージの送信に失敗しました。もう一度お試しください。',
+          failed: 'メッセージの送信に失敗しました。再試行してください。',
         },
       },
       footer: {
-        contact: '連絡先',
+        contact: 'コンタクト',
         email: 'lucasgola@outlook.com',
         media: 'ソーシャルメディア',
         links: {
@@ -1255,47 +1311,54 @@ const resources = {
         contact: 'Contact',
       },
       home: {
-        greeting: 'Bonjour, je suis Lucas',
+        greeting: 'Salut, je suis Lucas',
         role: 'Développeur Full Stack | Designer UI/UX',
-        viewWork: 'Voir mon travail',
+        viewWork: 'Voir Mon Travail',
+        activities: 'Ce que je fais',
         services: {
           frontend: {
             title: 'Développement Frontend',
-            description:
-              'Création d’interfaces utilisateur belles et réactives',
+            description: 'Création de belles interfaces utilisateur réactives',
           },
           backend: {
             title: 'Développement Backend',
-            description: 'Construction d’applications robustes côté serveur',
+            description: "Création d'applications robustes côté serveur",
           },
           design: {
             title: 'Conception UI/UX',
-            description: 'Création d’expériences utilisateur intuitives',
+            description: "Création d'expériences utilisateur intuitives",
           },
         },
       },
       about: {
         title: 'À propos de moi',
         description:
-          'Je suis un développeur Full Stack passionné, avec un œil attentif pour le design et une passion pour la création d’expériences utilisateur fluides. Avec plusieurs années d’expérience dans le développement web, je me spécialise dans la création d’applications modernes et réactives utilisant des technologies de pointe.',
+          "Je suis un développeur Full Stack passionné avec un œil attentif pour le design et un amour pour créer des expériences utilisateur fluides. Avec plusieurs années d'expérience en développement web, je me spécialise dans la création d'applications modernes et réactives en utilisant des technologies de pointe.",
         hobbies: {
-          title: 'Loisirs et Intérêts',
-          music: {
-            title: 'Musique',
-            description: 'Jouer de la guitare et découvrir de nouveaux genres',
-          },
-          games: {
-            title: 'Jeux',
-            description: 'Jouer à des jeux',
-          },
-          watching: {
-            title: 'Regarder',
-            description: 'Regarder des films',
-          },
-          programming: {
-            title: 'Programmation',
-            description: 'Créer des projets',
-          },
+          title: 'Loisirs et intérêts',
+          items: [
+            {
+              title: 'Musique',
+              description:
+                'Jouer de la guitare et découvrir de nouveaux genres',
+              color: 'bleu',
+            },
+            {
+              title: 'Jeux',
+              description: 'Jouer à des jeux',
+              color: 'violet',
+            },
+            {
+              title: 'Regarder',
+              description: 'Regarder des films',
+              color: 'rose',
+            },
+            {
+              title: 'Programmation',
+              description: 'Créer des projets',
+              color: 'ambre',
+            },
+          ],
         },
       },
       portfolio: {
@@ -1317,7 +1380,7 @@ const resources = {
             description: 'Guima Conseco',
           },
           {
-            title: 'Technicien en informatique',
+            title: 'Technicien informatique',
             company: 'RMTS Informática',
             period: '2024 - 2024',
             description: 'RMTS Informática',
@@ -1358,12 +1421,12 @@ const resources = {
             year: '2022',
           },
           {
-            name: 'Scrum Master professionnel I',
+            name: 'Professional Scrum Master I',
             issuer: 'Scrum.org',
             year: '2021',
           },
           {
-            name: 'Certification avancée React',
+            name: 'Certification avancée en React',
             issuer: 'Meta',
             year: '2020',
           },
@@ -1372,8 +1435,8 @@ const resources = {
       contact: {
         title: 'Contactez-moi',
         description:
-          'Vous avez une question ou voulez travailler ensemble? N’hésitez pas à me contacter!',
-        locationTitle: 'Localisation',
+          "Vous avez une question ou souhaitez collaborer ? N'hésitez pas à me contacter !",
+        locationTitle: 'Emplacement',
         location: 'São Paulo - SP',
         phoneTitle: 'Téléphone',
         phone: '+55 (11) 99448-5761',
@@ -1383,8 +1446,8 @@ const resources = {
           name: 'Nom',
           email: 'Email',
           message: 'Message',
-          success: 'Message envoyé avec succès!',
-          failed: 'Échec de l’envoi du message. Veuillez réessayer.',
+          success: 'Message envoyé avec succès !',
+          failed: "Échec de l'envoi du message. Veuillez réessayer.",
         },
       },
       footer: {
@@ -1398,6 +1461,168 @@ const resources = {
           contact: 'Contact',
         },
         rights: '2025 Lucas Gola da Silva. Tous droits réservés.',
+      },
+    },
+  },
+  kr: {
+    translation: {
+      nav: {
+        portfolio: '포트폴리오',
+        home: '홈',
+        about: '소개',
+        career: '경력',
+        contact: '연락처',
+      },
+      home: {
+        greeting: '안녕하세요, 저는 루카스입니다',
+        role: '풀 스택 개발자 | UI/UX 디자이너',
+        viewWork: '내 작업 보기',
+        activities: '내가 하는 일',
+        services: {
+          frontend: {
+            title: '프론트엔드 개발',
+            description: '아름답고 반응형 사용자 인터페이스 만들기',
+          },
+          backend: {
+            title: '백엔드 개발',
+            description: '강력한 서버 측 애플리케이션 구축',
+          },
+          design: {
+            title: 'UI/UX 디자인',
+            description: '직관적인 사용자 경험 설계',
+          },
+        },
+      },
+      about: {
+        title: '소개',
+        description:
+          '저는 디자인에 민감하고 원활한 사용자 경험을 만들기를 좋아하는 열정적인 풀 스택 개발자입니다. 웹 개발에서 몇 년의 경험을 바탕으로, 최첨단 기술을 사용하여 현대적이고 반응형 애플리케이션을 구축하는 데 전문성을 가지고 있습니다.',
+        hobbies: {
+          title: '취미 및 관심사',
+          items: [
+            {
+              title: '음악',
+              description: '기타 연주 및 새로운 장르 발견',
+              color: '파랑',
+            },
+            {
+              title: '게임',
+              description: '게임하기',
+              color: '보라색',
+            },
+            {
+              title: '감상하기',
+              description: '영화 보기',
+              color: '분홍색',
+            },
+            {
+              title: '프로그래밍',
+              description: '프로젝트 만들기',
+              color: '호박색',
+            },
+          ],
+        },
+      },
+      portfolio: {
+        loading: '리포지토리를 로드 중...',
+        tokenError:
+          'GitHub 토큰을 찾을 수 없습니다. 토큰을 .env 파일에 추가해주세요.',
+        title: '내 GitHub 프로젝트',
+        description: '여기 내 공개 GitHub 리포지토리가 있습니다',
+        filtersTitle: '언어별 필터',
+        clearFilters: '필터 지우기',
+        noResults: '선택한 언어로 리포지토리를 찾을 수 없습니다.',
+      },
+      career: {
+        profissional: [
+          {
+            title: '주니어 프로세스 분석가',
+            company: 'Guima Conseco',
+            period: '2024 - 현재',
+            description: 'Guima Conseco',
+          },
+          {
+            title: '컴퓨터 기술자',
+            company: 'RMTS Informática',
+            period: '2024 - 2024',
+            description: 'RMTS Informática',
+          },
+          {
+            title: '인턴',
+            company: 'VIVO',
+            period: '2022 - 2023',
+            description: 'VIVO',
+          },
+          {
+            title: '주니어 풀 스택 개발자',
+            company: 'Go Ahead',
+            period: '2021 - 2022',
+            description: '주니어 풀 스택 개발자',
+          },
+        ],
+        studies: [
+          {
+            degree: '컴퓨터 공학',
+            school: 'Faculdade Impacta de Tecnologia',
+            type: '학사 학위',
+            period: '2021 - 2024',
+            description: '컴퓨터 공학',
+          },
+          {
+            degree: '행정 기술자',
+            school: 'ETEC Parque da Juventude',
+            type: '기술 학위',
+            period: '2017 - 2019',
+            description: '행정 기술자',
+          },
+        ],
+        certifications: [
+          {
+            name: 'AWS 인증 개발자',
+            issuer: 'Amazon Web Services',
+            year: '2022',
+          },
+          {
+            name: '프로페셔널 스크럼 마스터 I',
+            issuer: 'Scrum.org',
+            year: '2021',
+          },
+          {
+            name: 'React 고급 인증서',
+            issuer: 'Meta',
+            year: '2020',
+          },
+        ],
+      },
+      contact: {
+        title: '연락하기',
+        description:
+          '질문이 있거나 함께 일하고 싶으신가요? 언제든지 연락 주세요!',
+        locationTitle: '위치',
+        location: '상파울루 - SP',
+        phoneTitle: '전화',
+        phone: '+55 (11) 99448-5761',
+        emailTitle: '이메일',
+        email: 'lucasgola@outlook.com',
+        forms: {
+          name: '이름',
+          email: '이메일',
+          message: '메시지',
+          success: '메시지가 성공적으로 전송되었습니다!',
+          failed: '메시지 전송 실패. 다시 시도해주세요.',
+        },
+      },
+      footer: {
+        contact: '연락처',
+        email: 'lucasgola@outlook.com',
+        media: '소셜 미디어',
+        links: {
+          title: '빠른 링크',
+          portfolio: '포트폴리오',
+          about: '소개',
+          contact: '연락처',
+        },
+        rights: '2025 Lucas Gola da Silva. All rights reserved.',
       },
     },
   },

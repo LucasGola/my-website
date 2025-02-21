@@ -5,9 +5,12 @@ import { useTranslation } from 'react-i18next';
 const Career = () => {
   const { t } = useTranslation();
 
-  const experiences = t('career.experiences', { returnObjects: true });
-  const education = t('career.education', { returnObjects: true });
+  const experiences = t('career.profissional', { returnObjects: true });
+  const education = t('career.studies', { returnObjects: true });
   const certifications = t('career.certifications', { returnObjects: true });
+  console.log(experiences);
+  console.log(education);
+  console.log(certifications);
 
   const containerVariants = {
     hidden: { opacity: 0 },
