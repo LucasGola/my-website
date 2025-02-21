@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const About = () => {
   const { t } = useTranslation();
-  const items = t('about.hobbies.items', { returnObjects: true });
+  const items = t('about.hobbies.items', { returnObjects: true }) as { title: string; description: string }[];
 
   const containerVariants = {
     hidden: { opacity: 0 },
