@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Award, Briefcase, GraduationCap } from 'lucide-react';
+import { Briefcase, GraduationCap } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const Career = () => {
@@ -122,7 +122,7 @@ const Career = () => {
           </motion.section>
 
           {/* Certifications */}
-          <motion.section
+          {/* <motion.section
             variants={containerVariants}
             initial='hidden'
             whileInView='visible'
@@ -156,7 +156,7 @@ const Career = () => {
                 </motion.div>
               ))}
             </div>
-          </motion.section>
+          </motion.section> */}
         </div>
       </div>
     </div>
