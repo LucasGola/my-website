@@ -7,10 +7,6 @@ const Career = () => {
 
   const experiences = t('career.profissional', { returnObjects: true });
   const education = t('career.studies', { returnObjects: true });
-  const certifications = t('career.certifications', { returnObjects: true });
-  console.log(experiences);
-  console.log(education);
-  console.log(certifications);
 
   const containerVariants = {
     hidden: { opacity: 0 },
